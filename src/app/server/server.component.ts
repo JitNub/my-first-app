@@ -12,5 +12,5 @@ export class ServerComponent {
     return this.serverStatus;
   }
 
-  serverName = 'CS 1.6 24/7 Poolday server';
+  serverName = 'CS v1.6 24/7 Poolday server';
 }
