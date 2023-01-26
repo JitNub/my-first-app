@@ -2,9 +2,15 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-warning-alert',
-  templateUrl: './warning-alert.component.html',
-  styleUrls: ['./warning-alert.component.css']
+  template: ` <p>This is the Warning Alert component</p> `,
+  styles: [
+    `
+      p {
+        padding: 20px;
+        background-color: mistyrose;
+        border: 1px solid red;
+      }
+    `,
+  ],
 })
-export class WarningAlertComponent {
-
-}
+export class WarningAlertComponent {}
