@@ -1,0 +1,13 @@
+<label>This is the Data Binding Homework</label>
+
+<input type="text" class="form-control" [(ngModel)]="username" />
+
+<p><b>Username:</b> {{ username }}</p>
+
+<button
+  class="btn btn-success"
+  [disabled]="username === ''"
+  (click)="username = ''"
+>
+  Click me!
+</button>
