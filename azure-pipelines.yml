@@ -21,8 +21,10 @@ steps:
     ng build --configuration production
   displayName: 'npm install and build'
 
-- task: PublishBuildArtifacts@1
+- task: AzureRmWebAppDeployment@4
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure for Students (48061ed6-7f3b-4d6b-89c5-1ff0cdf43b38)'
+    appType: 'webApp'
+    WebAppName: 'jitnub-my-first-app'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
