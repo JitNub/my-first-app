@@ -62,7 +62,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy App Service'
             inputs:
-              azureSubscription: 'Inform-your-subscription'
+              azureSubscription: 'Azure for Students (48061ed6-7f3b-4d6b-89c5-1ff0cdf43b38)'
               appType: 'webAppLinux'
               appName: 'jitnub-my-first-app'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
