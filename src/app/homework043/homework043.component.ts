@@ -9,14 +9,17 @@ export class Homework043Component {
   showPassword = false;
   secretPassword = 'tuna';
   clickNumber = 0;
-  clickMax = [];
+  log = [];
 
   displayDetails() {
-    this.showPassword
+    /* this.showPassword
       ? (this.showPassword = false)
       : (this.showPassword = true);
 
-    this.clickMax = [this.clickNumber++];
+    this.clickMax = [this.clickNumber++]; */
+
+    this.showPassword = !this.showPassword;
+    this.log.push(this.log.length + 1);
 
     /*  this.clickMax.forEach((element) => {
       console.log(element);

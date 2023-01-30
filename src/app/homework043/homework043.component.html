@@ -4,7 +4,13 @@
 
 <p *ngIf="showPassword === true">Secret Password = {{ secretPassword }}</p>
 <!-- <ng-template #noPassword><p>Nothing to see here!</p></ng-template> -->
-<p *ngFor="let click of clickMax">Number of clicks: {{ click }}</p>
+<p
+  *ngFor="let logItems of log"
+  [ngStyle]="{ backgroundColor: logItems >= 5 ? 'blue' : 'transparent' }"
+  [ngClass]="{ 'white-text': logItems >= 5 }"
+>
+  {{ logItems }}
+</p>
 
 <p>{{ clickNumber }}</p>
 <p>{{ showPassword }}</p>
