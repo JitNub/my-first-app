@@ -23,7 +23,7 @@ stages:
         displayName: 'Install Node.js 18.x'
 
       - script: |
-          cd AngularWithAzure/
+          cd jitnub-my-first-app/
           npm install -g @angular/cli
           npm install
           ng build --prod
