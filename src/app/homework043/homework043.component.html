@@ -1,0 +1,10 @@
+<button class="btn btn-primary" (click)="displayDetails()">
+  Display Details
+</button>
+
+<p *ngIf="showPassword === true">Secret Password = {{ secretPassword }}</p>
+<!-- <ng-template #noPassword><p>Nothing to see here!</p></ng-template> -->
+<p *ngFor="let click of clickMax">Number of clicks: {{ click }}</p>
+
+<p>{{ clickNumber }}</p>
+<p>{{ showPassword }}</p>

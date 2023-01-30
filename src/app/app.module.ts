@@ -8,6 +8,7 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { DatabindingHomeworkComponent } from './databinding-homework/databinding-homework.component';
+import { Homework043Component } from './homework043/homework043.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { DatabindingHomeworkComponent } from './databinding-homework/databinding
     AlertsComponent,
     SuccessAlertComponent,
     DatabindingHomeworkComponent,
+    Homework043Component,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
