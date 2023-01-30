@@ -23,7 +23,7 @@ stages:
         displayName: 'Install Node.js 18.x'
 
       - script: |
-          cd test/
+          cd jitnub-my-first-app/
           npm install -g @angular/cli
           npm install
           ng build --configuration production
@@ -33,7 +33,7 @@ stages:
       - task: ArchiveFiles@2
         displayName: 'Archive files'
         inputs:
-          rootFolderOrFile: '$(System.DefaultWorkingDirectory)/test/'
+          rootFolderOrFile: '$(System.DefaultWorkingDirectory)/jitnub-my-first-app/'
           includeRootFolder: false
           archiveType: zip
           archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
