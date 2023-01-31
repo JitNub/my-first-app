@@ -9,6 +9,7 @@ import { AlertsComponent } from './alerts/alerts.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { DatabindingHomeworkComponent } from './databinding-homework/databinding-homework.component';
 import { Homework043Component } from './homework043/homework043.component';
+import { Hw43Component } from './hw43/hw43.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { Homework043Component } from './homework043/homework043.component';
     SuccessAlertComponent,
     DatabindingHomeworkComponent,
     Homework043Component,
+    Hw43Component,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
