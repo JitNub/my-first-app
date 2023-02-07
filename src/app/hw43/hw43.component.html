@@ -1,1 +1,13 @@
-<p>hw43 works!</p>
+<button class="btn btn-primary" (click)="toogleDetails()">
+  Toogle Details
+</button>
+<p *ngIf="showPassword === true">Secret password = 'tuna'</p>
+<p>{{ showPassword }}</p>
+
+<p
+  *ngFor="let logNumber of logToogle"
+  [ngStyle]="{ backgroundColor: logNumber >= 5 ? 'blue' : 'transparent' }"
+  [ngClass]=""
+>
+  {{ logNumber }}
+</p>
